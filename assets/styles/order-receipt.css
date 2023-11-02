@@ -5,8 +5,9 @@
 }
 
 .order__top {
-    height: 315px;
-    padding: 40px 60px 64px 60px;
+    position: relative;
+    height: 251px;
+    padding: 40px 60px 0px 60px;
     background-color: #267EEC;
     display: flex;
     flex-direction: column;
@@ -70,6 +71,7 @@
 }
 
 .order__mid {
+    margin-top: -16px;
 }
 
 .order__bot {
@@ -197,11 +199,16 @@
     .order {
         width: 100%;
     }
+
+    .order__bot {
+        padding: 60px 50px 72px 50px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .order__top {
         padding: 40px 10px 20px 10px;
+        gap: 0;
     }
 
     .order__top-head {
@@ -223,12 +230,16 @@
     }
 
     .order__top-content-title {
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
     }
 
     .order__top-content-number {
         font-size: 18px;
+    }
+
+    .order__bot {
+        padding: 50px 30px 62px 30px;
     }
 
     .order__bot-info-payment > div {
@@ -243,7 +254,25 @@
         font-size: 18px;
     }
 
+    .order__bot-body-caculate-item:last-child > span:last-child {
+        font-size: 24px !important;
+    }
+
     .order__bot-body-total-item > span {
         font-size: 18px;
+    }
+
+    .order__bot-body-total-item:last-child > span:last-child {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .order__top-head-address-bot {
+        font-size: 16px;
+    }
+
+    .order__bot {
+        padding: 40px 20px 52px 20px;
     }
 }
