@@ -69,6 +69,12 @@
     line-height: 160%;
 }
 
+.oder__mid {
+    position: absolute;
+    top: 234px;
+    z-index: -1;
+}
+
 .oder__bot {
     padding: 70px 60px 82px 60px;
     display: flex;
@@ -140,6 +146,7 @@
 .oder__bot-body-total-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .oder__bot-body-caculate-item-title,
@@ -159,7 +166,7 @@
 .oder__bot-body-total-line {
     width: 100%;
     height: 1px;
-    border-top: 1px dashed rgba(0,0,0,.15);
+    border-top: 1px dashed rgba(0, 0, 0, .15);
 }
 
 .oder__bot-btn {
@@ -167,7 +174,7 @@
     justify-content: center;
 }
 
-.oder__bot-btn > button {
+.oder__bot-btn>button {
     background-color: #267EEC;
     width: 310px;
     height: 64px;
@@ -179,8 +186,67 @@
     gap: 12px;
 }
 
+.oder__bot-btn>button:hover {
+    background-color: #0E73ED;
+}
+
 .oder__bot-btn-text {
     color: #FFF;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 960px) {
+    .oder {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .oder__top {
+        padding: 40px 10px 20px 10px;
+    }
+
+    .oder__top-head {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .oder__top-head-address {
+        align-items: center;
+        gap: 0;
+    }
+
+    .oder__top-head-logo {
+        text-align: center;
+    }
+
+    .oder__top-content {
+        gap: 0;
+    }
+
+    .oder__top-content-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .oder__top-content-number {
+        font-size: 18px;
+    }
+
+    .oder__bot-info-payment > div {
+        font-size: 16px;
+    }
+
+    .oder__bot-info-package > div {
+        font-size: 16px;
+    }
+
+    .oder__bot-body-caculate-item > span {
+        font-size: 18px;
+    }
+
+    .oder__bot-body-total-item > span {
+        font-size: 18px;
+    }
 }
