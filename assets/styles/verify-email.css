@@ -21,7 +21,6 @@
 }
 
 .email__image {
-    height: 220px;
 }
 
 .email__content {
@@ -80,6 +79,15 @@
     .email {
         padding: 0;
         padding-top: 10px;
+    }
+
+    .email__image {
+        
+    }
+
+    .email__image>svg { 
+        width: 180px;
+        height: 170px;
     }
 
     .email__content-title {
